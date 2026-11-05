@@ -3,7 +3,8 @@ import pandas as pd
 import streamlit as st 
 import plotly.express as px 
 
-df=pd.read_csv('Advertising_F.csv')
+from pathlib import Path
+df = pd.read_csv(Path(__file__).parent / 'Advertising_F.csv')
 
 st.title('Advertising Effectiveness Tahir')
 
